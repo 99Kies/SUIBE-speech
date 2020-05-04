@@ -3,7 +3,7 @@
   <head>
     <title>就是一个小小的开源经验分享</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
     <!-- <script>
 
@@ -50,22 +50,22 @@ class: center, middle, inverse
 class: center, middle
 ## 比较经典的开源项目和开源社区
 
-<img src="./images/99kies/s-0.png" width="600px">
+<img src="{{ url_for('static', filename='images/99kies/s-0.png') }}" width="600px">
 --
 
 
-<img src="./images/99kies/s-2.png" width="600px">
+<img src="{{ url_for('static', filename='images/99kies/s-2.png') }}" width="600px">
 --
 
 ---
 class: center, middle
-<img src="./images/99kies/s-3.png" width="700px">
+<img src="{{ url_for('static', filename='images/99kies/s-3.png') }}" width="700px">
 --
 ---
 
 ## 汤会枫 / 99Kies
 
-<img src="./images/99kies/99kies_.jpg" width="200px">
+<img src="{{ url_for('static', filename='images/99kies/99kies_.jpg') }}" width="200px">
 
 - OpenSource Developer
 - Flask开发者, Docker/K8s方向
@@ -105,14 +105,14 @@ HUCTF/xxx  **项目Leader**
 
 每个Open Source Developer都是在闯荡江湖。
 
-<img src="./images/99kies/bing.png" width="400px">
+<img src="{{ url_for('static', filename='images/99kies/bing.png') }}" width="400px">
 
 
 
 --
 ---
 class: center, middle
-<img src="./images/99kies/heart.png" width="700px">
+<img src="{{ url_for('static', filename='images/99kies/heart.png') }}" width="700px">
 
 --
 
@@ -129,7 +129,7 @@ class: center, middle
 
 # 拿我为例
 
-<img src="./images/99kies/share.png" width="800px">
+<img src="{{ url_for('static', filename='images/99kies/share.png') }}" width="800px">
 --
 
 ---
@@ -257,7 +257,7 @@ class: center, middle, inverse
 
 **coscup** | 台湾 | 很经典
 
-<img src="./images/99kies/coscup.png" width="700px">
+<img src="{{ url_for('static', filename='images/99kies/coscup.png') }}" width="700px">
 
 ( 没去过，不过其他同学的反响很棒 )
 
@@ -266,7 +266,7 @@ class: center, middle, inverse
 
 **coscon** | 大陆 | 也很不错
 
-<img src="./images/99kies/coscon.jpg" width="600px">
+<img src="{{ url_for('static', filename='images/99kies/coscon.jpg') }}" width="600px">
 
 今年是10.24举办
 
@@ -274,14 +274,14 @@ class: center, middle, inverse
 
 ## Links & Contact
 
-<img src="./images/99kies/wechat.jpg" width="200px">
+<img src="{{ url_for('static', filename='images/99kies/wechat.jpg') }}" width="200px">
 
 - Blog: [Blog](https://blog.csdn.net/qq_19381989)
 - GitHub: [github.com/99kies](https://github.com/99kies)
 - PPT Source: [github.com/99kies/SUIBE-speech](https://github.com/99kies/SUIBE-speech)
 
     </textarea>
-    <script src="js/remark.min.js">
+    <script src="{{ url_for('static', filename='js/remark.min.js') }}">
     </script>
     <script>
       var slideshow = remark.create({
